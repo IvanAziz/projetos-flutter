@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:primeiro_projeto/EntradaDados/EntradaRadioButton.dart';
+import 'package:primeiro_projeto/EntradaDados/EntradaSlider.dart';
+
+///import 'package:primeiro_projeto/EntradaDados/EntradaSwitch.dart';
+///import 'package:primeiro_projeto/EntradaDados/EntradaRadioButton.dart';
 ///import 'package:primeiro_projeto/EntradaDados/EntradaCheckBox.dart';
 ///import 'package:primeiro_projeto/CampoTexto.dart';
 
@@ -9,7 +12,9 @@ void main() {
     MaterialApp(
       //home: CampoTexto(),
       //home: EntradaCheckBox(),
-      home: EntradaRadioButton(),
+      //home: EntradaRadioButton(),
+      //home: EntradaSwitch(),
+      home: EntradaSlider(),
     ),
   );
 }
