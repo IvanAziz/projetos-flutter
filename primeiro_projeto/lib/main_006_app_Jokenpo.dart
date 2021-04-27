@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'Jokenpo.dart';
+import 'HomeApp006_Jokenpo.dart';
 
 void main(){
     runApp(MaterialApp(
-     home: Jokenpo(),
+     home: HomeApp006_Jokenpo(),
      debugShowCheckedModeBanner: false
     ));
 }

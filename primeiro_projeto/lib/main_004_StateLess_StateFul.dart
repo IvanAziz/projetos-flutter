@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-void main(){
+void main() {
   runApp(MyApp());
 }
 
@@ -9,25 +9,25 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-        title: "Frases do dia",
-        home: Home()
+      title: "Frases do dia",
+      home: Home(),
     );
   }
 }
 
-class HomeStatefull extends StatefulWidget{
+class HomeStatefull extends StatefulWidget {
   @override
   State<StatefulWidget> createState() => _HomeStatefullState();
 }
 
-class _HomeStatefullState extends State<HomeStatefull>{
+class _HomeStatefullState extends State<HomeStatefull> {
   @override
   Widget build(BuildContext context) {
     return Container();
   }
 }
 
-class Home extends StatelessWidget{
+class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     String _titulo = "Instagram";
@@ -39,7 +39,7 @@ class Home extends StatelessWidget{
       ),
       body: Padding(
         padding: EdgeInsets.all(16),
-        child: Text("Conteúdo principal")
+        child: Text("Conteúdo principal"),
       ),
       bottomNavigationBar: BottomAppBar(
         color: Colors.lightGreen,
@@ -50,8 +50,8 @@ class Home extends StatelessWidget{
               Text("Text 1"),
               Text("Text 2"),
             ],
-          )
-        )
+          ),
+        ),
       ),
     );
   }

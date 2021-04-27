@@ -1,12 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:primeiro_projeto/EntradaDados/EntradaRadioButton.dart';
+///import 'package:primeiro_projeto/EntradaDados/EntradaCheckBox.dart';
 ///import 'package:primeiro_projeto/CampoTexto.dart';
-import 'package:primeiro_projeto/HomeApp007.dart';
 
+// Entrada de dados, alterar o home para validar diferentes entradas de dados
 void main() {
   runApp(
     MaterialApp(
-      //home: CaixaTexto(),
-      home: HomeApp007(),
+      //home: CampoTexto(),
+      //home: EntradaCheckBox(),
+      home: EntradaRadioButton(),
     ),
   );
 }

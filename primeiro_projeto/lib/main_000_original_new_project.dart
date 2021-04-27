@@ -1,4 +1,3 @@
-/*
 import 'dart:math';
 
 import 'package:flutter/material.dart';
@@ -15,8 +14,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(
-          title: 'Frases do dia'),
+      home: MyHomePage(title: 'Frases do dia'),
     );
   }
 }
@@ -73,4 +71,3 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
-*/

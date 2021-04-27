@@ -69,7 +69,7 @@ class _HomeState extends State<Home> {
                       fontWeight: FontWeight.bold),
                 ),
                 onPressed: _gerarFrase,
-              )
+              ),
             ],
           ),
         ),

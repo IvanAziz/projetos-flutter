@@ -1,13 +1,13 @@
-import 'package:flutter/cupertino.dart';
+//import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'dart:math';
 
-class Jokenpo extends StatefulWidget {
+class HomeApp006_Jokenpo extends StatefulWidget {
   @override
-  _JokenpoState createState() => _JokenpoState();
+  _HomeApp006_JokenpoState createState() => _HomeApp006_JokenpoState();
 }
 
-class _JokenpoState extends State<Jokenpo> {
+class _HomeApp006_JokenpoState extends State<HomeApp006_Jokenpo> {
   var _imagemApp = AssetImage("images/padrao.png");
   var _mensagem = "Escolha uma opção abaixo";
   var _vezesGanhou = 0;
