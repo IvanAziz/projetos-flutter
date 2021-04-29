@@ -56,6 +56,17 @@ flutter:
   - images/papel.png
   - images/tesoura.png
   - images/logo_app007.png
+  - images/cliente1.png
+  - images/cliente2.png
+  - images/detalhe_cliente.png
+  - images/detalhe_contato.png
+  - images/detalhe_empresa.png
+  - images/detalhe_servico.png
+  - images/logo_ATM.png
+  - images/menu_cliente.png
+  - images/menu_contato.png
+  - images/menu_servico.png
+  - images/menu_empresa.png
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
