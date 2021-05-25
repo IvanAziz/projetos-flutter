@@ -1,6 +1,9 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
-import 'dart:convert';
+import 'dart:core';
+
 
 void main() {
   runApp(MaterialApp(
@@ -16,14 +19,14 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
   String _resultado = "O resultado da pesquisa é?";
-  TextEditingController controllerCep = TextEditingController();
 
   void _recuperarCep() async {
-    String url = "https://viacep.com.br/ws/${controllerCep.text}/json/";
-
+    String url = "https://viacep.com.br/ws/31155150/json/";
+    Uri uri = Uri.parse(url);
     http.Response response;
-    response = await http.get(url);
-    Map<String, dynamic> retorno = json.decode(response.body);
+    response = await http.get(uri);
+
+    Map<String, dynamic> retorno = jsonDecode(response.body);
 
     String logradouro = retorno["logradouro"];
     String complemento = retorno["complemento"];
@@ -32,8 +35,7 @@ class _HomeState extends State<Home> {
     String uf = retorno["uf"];
 
     setState(() {
-      _resultado =
-          "$logradouro, $complemento, $bairro, $localidade - $uf";
+      _resultado = "$logradouro, $complemento, $bairro, $localidade - $uf";
     });
     print(_resultado);
   }
@@ -47,18 +49,14 @@ class _HomeState extends State<Home> {
       body: Container(
           padding: EdgeInsets.all(40),
           child: Column(children: [
-            TextField(
-              keyboardType: TextInputType.number,
-              decoration: InputDecoration(
-                labelText: "Digite o cep: ex: 05428200"
-              ),
-              style: TextStyle(
-                fontSize: 20
-              ),
-              controller: controllerCep),
+            Image.asset("images/bitcoin.png"),
             ElevatedButton(
               onPressed: _recuperarCep,
-              child: Text("Clique aqui"),
+              child: Text("Atualizar"),
+              style: ButtonStyle(
+                backgroundColor: MaterialStateColor.resolveWith((
+                    states) => Colors.yellow),
+              ),
             ),
             Text(_resultado),
           ])),

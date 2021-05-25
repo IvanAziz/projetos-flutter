@@ -1,27 +1,22 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="com.cas.primeiro_projeto">
+    package="cas.com.preco_bitcoin">
    <application
-        android:label="primeiro_projeto"
-        android:icon="@android:drawable/sym_def_app_icon">
-        <meta-data
-            android:value="2"
-            ></meta-data>
-
-        <!--suppress AndroidDomInspection -->
-       <activity
-            android:name="."
+        android:label="preco_bitcoin"
+        android:icon="@mipmap/ic_launcher">
+        <activity
+            android:name=".MainActivity"
             android:launchMode="singleTop"
+            android:theme="@style/LaunchTheme"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
             android:hardwareAccelerated="true"
-            android:windowSoftInputMode="adjustResize"
-           tools:ignore="MissingClass">
+            android:windowSoftInputMode="adjustResize">
             <!-- Specifies an Android theme to apply to this Activity as soon as
                  the Android process has started. This theme is visible to the user
                  while the Flutter UI initializes. After that, this theme continues
                  to determine the Window background behind the Flutter UI. -->
             <meta-data
               android:name="io.flutter.embedding.android.NormalTheme"
+              android:resource="@style/NormalTheme"
               />
             <!-- Displays an Android View that continues showing the launch screen
                  Drawable until Flutter paints its first frame, then this splash
@@ -30,6 +25,7 @@
                  Flutter's first frame. -->
             <meta-data
               android:name="io.flutter.embedding.android.SplashScreenDrawable"
+              android:resource="@drawable/launch_background"
               />
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
