@@ -44,6 +44,12 @@ class _HomeState extends State<Home> {
             //print("item ${_itens[indice]["titulo"] }");
 
             return ListTile(
+              onTap: () {
+                print("Clique com OnTap");
+              },
+              onLongPress: () {
+                print("Clique com OnLongPress");
+              },
               title: Text(_itens[indice]["titulo"]),
               subtitle: Text(_itens[indice]["descricao"]),
             );
